@@ -1,8 +1,9 @@
 # ML-with-Visuals
-+ [Project Description](#Project Description)
++ [Project Description](#ProjectDescription)
 + [Findings](#Findings)
-+ [Setting up the Envirnonment](#Setting up the Envirnonment)
++ [Setting up the Envirnonment](#SettinguptheEnvirnonment)
 + [Acknowledgements](#Acknowledgements)
+
 
 ## Project Description
 This repo seeks to explore Berlin Airbnb data and determine how listing are distributed across the city as well as to make predictions on the pricing of such listings.
