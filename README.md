@@ -19,11 +19,18 @@ Graph Annotations:
 * AT: The Altes Museum, which is located on Museum Island
 * GT: Major Urban Park that encompasses the Reichstag
 
+#### Distance versus Price: Atles Museum
+Seeing that the Altes Museum was fairly close to the Median Point, I decided to explore the distance of a listing from the Atles Museum and the price of the listing.
+
+![graph](visuals/distanceVPrice.png)
+
+As expected, the bluk of the lisitings as some distance away from the museum, and those that are closer are able to garner higher prices. As the distance increases, and the lisiting leaves central Berlin, the maximum price begins to rapidly fall and appears to cluster between 0 and 100 euros.
 #### Price Predictions
-Currently, using a Tree Regression Model, we can determine the price of a listing with a mean absolute error of 24.31 (note that the currency is unlisted, although it is likely EUR or USD). Such a model takes 59.55 seconds to run. However, when we drop fields such as host_name, last_review, and name, the mean absolute error increases to 28.75, but the time take to find these results is drastically less: 10.34 seconds. 
-## Setting up the Envirnonment
+Currently, using a Tree Regression Model, we can determine the price of a listing with a mean absolute error of €24.31. Such a model takes 59.55 seconds to run. However, when we drop fields such as host_name, last_review, and name, the mean absolute error increases to €28.75, but the time take to find these results is drastically less: 10.34 seconds. 
+## Setting up the Environment
 * `pip install -r requirements.txt`
 
 ## Acknowledgements
 * Data taken from [Kaggle](https://www.kaggle.com/brittabettendorf/berlin-airbnb-data) 
+* `treeRegModel.py` was adapted from [Kaggle's ML Course](https://www.kaggle.com/learn/intermediate-machine-learning) 
 * Project organization is based on [Cookie Cutter Data Science](https://github.com/drivendata/cookiecutter-data-science)

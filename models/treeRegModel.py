@@ -38,7 +38,7 @@ X_valid = X_valid_full[my_cols].copy()
 # Preprocessing for numerical data
 numerical_transformer = SimpleImputer(strategy='mean')
 
-#Preprocessing for categorical data
+# Preprocessing for categorical data
 categorical_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='most_frequent')),
     ('onehot', OneHotEncoder(handle_unknown='ignore'))
